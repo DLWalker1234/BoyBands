@@ -1,29 +1,25 @@
-var bands = ["Boyz II Men", "NSync", "New Kids on the Block", "98 Degrees", "One Direction"];
-var vegetables = ["Carrots", "Kale", "Zucchini", "Broccoli", "Squash"];
+console.log('start');
 
-// The number of loops to perform (what if the array changes?)
-var loopCount = 5;
+var bandsLength = band.length;
+var vegetablesLength = vegetables.length;
 
-// Keep track of which band we're on in the loop
-var currentBand = "";
+function arrayPlay() {
+	var bands = ["Boyz II Men", "NSync", "New Kids on the Block", "98 Degrees", "One Direction"];
+	var vegetables = ["Carrots", "Kale", "Zucchini", "Broccoli", "Squash"];
+	
+	for (let i = 0; i < vegetablesLength; i++) {
+		document.getElementById("vg").innerHTML = vegetables[i];
+		console.log('working');
+	}
+	for (let k = 0; k < bandsLength; k++) {
+		document.getElementById("bb").innerHTML = bands[i];
+		console.log("still Wokring");
+	}
+		
+};
 
-// Keep track of which veggie we're on in the loop
-var currentVeggie = "";
+arrayPlay();
 
-// Get a reference to the appropriate DOM element for bands
-var bandElement = document.getElementById(bands[0]);
 
-// Get a reference to the appropriate DOM element for vegetables
-var veggieElement = document.getElementById(vegetables[0]);
 
-// Start looping
-for (var loopTracker = 0; loopTracker < loopCount; loopTracker += 1) {
-  
-  // Add the band names into the correct <div>
-  currentBand = document.write(currentBand);
 
-  
-  // Add the veggie names into the correct <div>
-  currentVeggie = document.write(currentVeggie);
-
-}
