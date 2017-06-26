@@ -1,25 +1,26 @@
 console.log('start');
 
-var bandsLength = band.length;
-var vegetablesLength = vegetables.length;
+var bands = ["Boyz II Men", "NSync", "New Kids on the Block", "98 Degrees", "One Direction"];
+var vegetables = ["Carrots", "Kale", "Zucchini", "Broccoli", "Squash"];
 
-function arrayPlay() {
-	var bands = ["Boyz II Men", "NSync", "New Kids on the Block", "98 Degrees", "One Direction"];
-	var vegetables = ["Carrots", "Kale", "Zucchini", "Broccoli", "Squash"];
+var vegs = document.getElementById("vg");
+var band = document.getElementById("bb");
+
+vegetables2 = [];
+bands2 = []
+
 	
-	for (let i = 0; i < vegetablesLength; i++) {
-		document.getElementById("vg").innerHTML = vegetables[i];
-		console.log('working');
-	}
-	for (let k = 0; k < bandsLength; k++) {
-		document.getElementById("bb").innerHTML = bands[i];
-		console.log("still Wokring");
-	}
-		
-};
 
-arrayPlay();
 
+vegetables.forEach(function(item){
+  vegetables2.push(item);
+  vegs.innerHTML = vegetables2;
+})
+
+bands.forEach(function(item) {
+	bands2.push(item);
+	band.innerHTML = bands2;
+})
 
 
 
